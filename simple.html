@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+header{display: grid;
+grid-template-rows: 1fr 1fr;
+height: 20vh
+}
+
+.h{grid-row: 2/4;}
+.e{grid-column: 3/4;}
+
+main{display: grid;
+grid-template-columns: 2fr 1fr 2fr;
+grid-template-rows: 1fr 1fr 1fr;
+height: 50vh}
+
+.label{grid-row: 5;
+grid-column: 1;
+justify-items: center;
+height: 20%}
+.section{height: 2fr;}
+
+.flower{grid-column: 2/3;
+grid-row: 1/span2;}
+
+.our, .hope{
+    grid-column: 3;
+    grid-row: 5;
+    margin: 25px;
+  
+}
+footer{display: grid;
+grid-template-columns: 30% 30% 40%;
+grid-template-rows: 50% 50%;
+height: 30vh}
+
+.we{
+grid-row: 5;    
+grid-column: 1;
+margin: 10px;
+}
+
+.tap{
+    grid-row: 3;
+    grid-column: 3;
+    margin: 15px;
+}
+
+.contacts{grid-row: 6;
+grid-column: 1;
+margin: 10px;}
+
+
+@media screen and (max-width:1023px) 
+{.flower{display: none;} 
+.tap{display: none;} 
+}
+
+
+</style>
+</head>
+<body>
+<header>
+
+    <img  class="h" src="iconka.png" alt="here">    
+    <img class= "e" src="Menu.png" alt="Menu">
+
+</header>  
+<main>
+
+    <section class="label" ><img src="M (1).png" alt="m">  
+    <img src="a.png" alt="a">  
+    <img src="r.png" alt="r">
+    <img src="i.png" alt="i">
+    
+</section> 
+    <img class="flower" src="pic.png" sizes="362x490px" alt="flow">
+    
+    <img class="hope" src="Line 1.png" alt="hop">
+    <img class= "our" src="our.png" alt="words"> 
+
+</main>  
+
+<footer>
+    
+<img class="we" src="Contact us.png" alt="contact">
+<img class="contacts" src="abc@figma.com 123-456-7895.png" alt="fig">
+
+<img class="tap" src="Enroll Now.png" alt="Now">
+
+
+</footer>
+</body>
+</html>
